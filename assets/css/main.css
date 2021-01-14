@@ -4,13 +4,32 @@
 @import url("custom.flexslider.css");
 @import url("framework.css");
 /* header */
-#top-imagen {
+html, body {
+  height: 100%;
+}
+
+.full-height {
+  height: 100%;
+}
+#top >  #top-imagen {
   background-image: url("../images/torta1.jpg");
+}
+#page-1 > #top-imagen{
+  background: url("../images/torta3.jpg") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 #header {
   padding: 0 15px;
 }
+#page-single{
+  margin-top: 50px;
+  background: rgba(255,255,255,.7);
+  padding: 30px;
 
+}
 #header #logo {
   margin: 28px 0 0 0;
 }
@@ -43,6 +62,11 @@
   background-color: rgba(0, 0, 0, 0.55);
 }
 /*estilo generales */
+.left-footer{
+margin-left: 250px;
+
+}
+
 .row1 {
   color: #474747;
 }
@@ -450,7 +474,6 @@ a.inverse .icon.fa {
         margin: 0 0 30px 0;
         padding: 0;
     }
-
     #header {
         text-align: center;
     }
