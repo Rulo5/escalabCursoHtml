@@ -14,16 +14,13 @@
       media="all"
     />
   </head>
-  <body id="page-1">
+  <body id="page-5">
  
-
-
-
     <div class="topspacer bgded  full-height" id="top-imagen">
         <div class="wrapper row1">
           <header id="header" class="hoc clear">
             <div id="logo" class="fl_left">
-              <h1><a href="index.html">Torta de Nuez</a></h1>
+              <h1><a href="index.html">Contacto - Subcribete</a></h1>
             </div>
   
             <nav id="mainav" class="fl_right">
@@ -32,44 +29,78 @@
                 <li>
                   <a class="drop" href="#">recetas</a>
                   <ul>
-                    <li><a href= "recetas.html">Torta chocolate</a></li>
-                    <li><a href= "recetas.html">Torta manjar</a></li>
-                    <li><a href= "recetas.html">Torta nuez </a></li>
-                    <li><a href= "recetas.html">Torta rusa de miel </a></li>
-              </ul>
+                    <li><a href="tortaChocolate.html">Torta chocolate</a></li>
+                    <li><a href="tortaNuez.html">Torta nuez</a></li>
+                    <li><a href="tortaManjar.html">Torta Manjar</a></li>
+                    <li><a href="tortaRusa.html">Torta Rusa Miel</a></li>
+                  </ul>
                 </li>
-                <li><a href="#">contacto</a></li>
+                <li><a href="formulario.html">contacto</a></li>
               </ul>
             </nav>
           </header>
         </div>
         <div id="page-single" class="hoc clear ">
-           <hgroup class="center">
-            <h1></h1>
-            <h2>lleva nuestros ricos productos directo a tu mesa</h2>
-           </hgroup>   
-         <div>
-            <p>ingresar nombre</p>
-            <input type="text" value="text">
-            <p>ingresar apellidos</p>
-            <p>ingresar fecha de nacimiento</p>
-            <p>ingrese email</p>
+          <div class="contact_form">
 
-         </div>
-
-             <form autocomplete="on">
-
-            
-
-
-
-
-          </form>
-
-
-
-
-
+            <div class="formulario">			
+              <h1>Formulario de contacto</h1>
+                <h3>Escríbenos y en breve los pondremos en contacto contigo</h3>
+        
+        
+                  <form action="submeter-formulario.php" method="post">				
+        
+                    
+                        <p>
+                          <label for="nombre" class="colocar_nombre">Nombre
+                            <span class="obligatorio">*</span>
+                          </label>
+                            <input type="text" name="introducir_nombre" id="nombre" required="obligatorio" placeholder="Escribe tu nombre">
+                        </p>
+                      
+                        <p>
+                          <label for="email" class="colocar_email">Email
+                            <span class="obligatorio">*</span>
+                          </label>
+                            <input type="email" name="introducir_email" id="email" required="obligatorio" placeholder="Escribe tu Email">
+                        </p>
+                    
+                        <p>
+                          <label for="telefone" class="colocar_telefono">Teléfono
+                          </label>
+                            <input type="tel" name="introducir_telefono" id="telefono" placeholder="Escribe tu teléfono">
+                        </p>		
+                      
+                        <p>
+                          <label for="website" class="colocar_website">Sitio web
+                          </label>
+                            <input type="url" name="introducir_website" id="website" placeholder="Escribe la URL de tu web">
+                        </p>		
+                      
+                        <p>
+                          <label for="asunto" class="colocar_asunto">Asunto
+                            <span class="obligatorio">*</span>
+                          </label>
+                            <input type="text" name="introducir_asunto" id="assunto" required="obligatorio" placeholder="Escribe un asunto">
+                        </p>		
+                      
+                        <p>
+                          <label for="mensaje" class="colocar_mensaje">Mensaje
+                            <span class="obligatorio">*</span>
+                          </label>                     
+                                             <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje" required="obligatorio" placeholder="Deja aquí tu comentario..."></textarea> 
+                                         </p>	  								
+                      
+                        <button type="submit" name="enviar_formulario" id="enviar"><p>Enviar</p></button>
+        
+                        <p class="aviso">
+                          <span class="obligatorio"> * </span>los campos son obligatorios.
+                        </p>					
+                    
+                  </form>
+            </div>	
+          </div>
+        
 
 
         </div>
